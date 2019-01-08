@@ -1,0 +1,6 @@
+<nav mat-tab-nav-bar [backgroundColor]="primary" [color]="accent">
+  <a mat-tab-link *ngFor="let route of navLinks; let i = index" [routerLink]="route.link" routerLinkActive #rla="routerLinkActive"
+    [active]="rla.isActive">{{route.label}}
+  </a>
+</nav>
+<router-outlet></router-outlet>

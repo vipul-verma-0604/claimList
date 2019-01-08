@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/* ink bar style */
+.mat-tab-nav-bar.mat-primary .mat-ink-bar{
+    background: yellow;
+    height: 10px;
+  }
+

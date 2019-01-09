@@ -3,4 +3,7 @@
     [active]="rla.isActive">{{route.label}}
   </a>
 </nav>
-<router-outlet></router-outlet>
+<div [@routeAnimation]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
+

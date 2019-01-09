@@ -15,27 +15,33 @@ const routes: Routes = [
     children: [
       {
         path: 'notSent',
-        component: NotSentComponent
+        component: NotSentComponent,
+        data: {"animation": "NotSent"}
       },
       {
         path: 'returned',
-        component: ReturnedComponent
+        component: ReturnedComponent,
+        data: {"animation": "Returned"}
       },
       {
         path: 'refused',
-        component: RefusedComponent
+        component: RefusedComponent,
+        data: {"animation": "Refused"}
       },
       {
         path: 'sent',
-        component: SentComponent
+        component: SentComponent,
+        data: {"animation": "Sent"}
       },
       {
         path: 'appealed',
-        component: AppealedComponent
+        component: AppealedComponent,
+        data: {"animation": "Appealed"}
       },
       {
         path: 'basiclist',
-        component: BasicListComponent
+        component: BasicListComponent,
+        data: {"animation": "Basiclist"}
       }
     ]
   }

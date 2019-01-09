@@ -10,9 +10,11 @@ import { RefusedComponent } from '../../components/refused/refused.component';
 import { SentComponent } from '../../components/sent/sent.component';
 import { AppealedComponent } from '../../components/appealed/appealed.component';
 import { BasicListComponent } from '../../components/basic-list/basic-list.component';
+import { CriteriaComponent } from '../../components/criteria/criteria.component';
+import { ResultComponent } from '../../components/result/result.component';
 
 @NgModule({
-  declarations: [ClaimsComponent, NotSentComponent, ReturnedComponent, RefusedComponent, SentComponent, AppealedComponent, BasicListComponent],
+  declarations: [ClaimsComponent, NotSentComponent, ReturnedComponent, RefusedComponent, SentComponent, AppealedComponent, BasicListComponent, CriteriaComponent, ResultComponent],
   imports: [
     CommonModule,
     MaterialModule,

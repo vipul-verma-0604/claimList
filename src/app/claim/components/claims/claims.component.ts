@@ -3,13 +3,15 @@ import {
   OnInit
 } from '@angular/core';
 import {
-  Router
+  Router, RouterOutlet
 } from '@angular/router';
+import { SlideInAnimation } from '../../animations/animations';
 
 @Component({
   selector: 'cl-claims',
   templateUrl: './claims.component.html',
-  styleUrls: ['./claims.component.css']
+  styleUrls: ['./claims.component.css'],
+  animations: [SlideInAnimation]
 })
 export class ClaimsComponent implements OnInit {
   primary: string = 'primary';
@@ -42,6 +44,10 @@ export class ClaimsComponent implements OnInit {
 
   ngOnInit() {
 
+  }
+
+  prepareRoute(outlet: RouterOutlet) {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation']
   }
 
 }
